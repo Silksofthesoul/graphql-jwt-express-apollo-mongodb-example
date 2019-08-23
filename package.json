@@ -1,14 +1,15 @@
 {
-  "name": "server",
+  "name": "graphql-jwt-express-apollo-mongodb-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "worked (2019/08) example \"Express\" server with GraphQL and JWT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "demon": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Labuzov Evgeny <silksofthesoul@yandex.ru>",
+  "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^2.9.0",
     "bcrypt": "^3.0.6",
