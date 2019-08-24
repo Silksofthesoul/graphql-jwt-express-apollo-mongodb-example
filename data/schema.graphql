@@ -4,11 +4,19 @@ type User {
   email: String!
 }
 
+type Todo {
+  id: Int!
+  userId: ID!
+  title: String!
+}
+
 type Query {
   me: User
+  myTodos: [Todo]
 }
 
 type Mutation {
   signup (username: String!, email: String!, password: String!): String
   login (email: String!, password: String!): String
+  addTodo (title: String!): Todo
 }
