@@ -53,7 +53,7 @@ const startServer = async () => {
   app.listen(
     PORT,
     () => {
-      console.log(`The server is runung on http://localhost:${PORT}/api`);
+      console.log(`The server is runung on http://localhost:${PORT}/graphql`);
     }
   );
 }
