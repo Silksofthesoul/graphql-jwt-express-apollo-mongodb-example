@@ -67,6 +67,10 @@ Worked (2019/08) example "Express" server with GraphQL and JWT
 -   run _mutation_ "addTodo"
 -   run _query_ "myTodos"
 
+## Client
+Client Example (vuejs):
+<https://github.com/Silksofthesoul/graphql-jwt-vue-example>
+
 Useful links:
 
 -   [Handling authentication in GraphQL – Part 2: JWT](https://blog.pusher.com/handling-authentication-in-graphql-jwt/)
