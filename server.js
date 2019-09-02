@@ -25,7 +25,11 @@ const startServer = async () => {
     resolvers,
     context: ({req}) => {
       const token =  req.headers.token;
-      return {user: jwt.verify(token, process.env.JWT_SECRET)};
+      // console.log('|||[-', req.headers, '-]|||');
+      if(token){
+        return {user: jwt.verify(token, process.env.JWT_SECRET)};
+      }
+      return null;
     },
     playground: {
       endpoint: '/graphql',
