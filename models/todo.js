@@ -57,5 +57,13 @@ obj.create = async (args) => {
   db.client.close();
   return res;
 };
+obj.remove = async (args) => {
+  const db = await obj.connect();
+  const id = args.id;
+  await db
+    .collection
+    .findOneAndDelete({id});
+  db.client.close();
+};
 
 module.exports = obj;

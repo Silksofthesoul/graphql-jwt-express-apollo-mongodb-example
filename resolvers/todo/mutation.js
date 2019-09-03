@@ -8,5 +8,13 @@ module.exports = {
       title
     });
     return newTodo;
+  },
+  async remTodo(_, {id}, {user}) {
+    if(!user) throw new Error('You are not authenticated!');
+    await Todo.remove({
+      userId: user.id,
+      id
+    });
+    return await Todo.find({userId: user.id});
   }
 };
