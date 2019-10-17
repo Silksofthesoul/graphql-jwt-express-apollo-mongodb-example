@@ -16,5 +16,14 @@ module.exports = {
       id
     });
     return await Todo.find({userId: user.id});
+  },
+  async updTodo(_, {id, title}, {user}) {
+    if(!user) throw new Error('You are not authenticated!');
+    await Todo.update({
+      userId: user.id,
+      id,
+      title
+    });
+    return await Todo.find({userId: user.id});
   }
 };

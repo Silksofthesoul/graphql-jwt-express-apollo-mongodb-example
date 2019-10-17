@@ -20,4 +20,5 @@ type Mutation {
   login (email: String!, password: String!): String
   addTodo (title: String!): Todo
   remTodo (id: Int!): [Todo]
+  updTodo (id: Int!, title: String!): [Todo]
 }
