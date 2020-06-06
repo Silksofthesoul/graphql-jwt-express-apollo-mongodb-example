@@ -11,7 +11,7 @@
   "author": "Labuzov Evgeny <silksofthesoul@yandex.ru>",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-express": "^2.9.0",
+    "apollo-server-express": "^2.14.2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "dotenv": "^8.1.0",
